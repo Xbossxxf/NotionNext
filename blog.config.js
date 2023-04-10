@@ -54,9 +54,7 @@ const BLOG = {
   FACEBOOK_PAGE_ID: process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || '', // Facebook Page ID 來啟用 messenger 聊天功能
   FACEBOOK_APP_ID: process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || '', // Facebook App ID 來啟用 messenger 聊天功能 获取: https://developers.facebook.com/
 
-  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '本站资源来自用户发布以及互联网公开渠道收集整理，非私人所有
-仅限于学习交流使用，站长只为相关会员提供更新维护服务
-如有侵权争议或不妥之处请联系本站删除处理 ', // 备案号 闽ICP备XXXXXXX
+  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '本站资源来自用户发布以及互联网公开渠道收集整理，非私人所有;仅限于学习交流使用，站长只为相关会员提供更新维护服务;如有侵权争议或不妥之处请联系本站删除处理 ', // 备案号 闽ICP备XXXXXXX
 
   // PrismJs 代码相关
   PRISM_JS_AUTO_LOADER: 'https://npm.elemecdn.com/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js',
@@ -77,13 +75,13 @@ const BLOG = {
 
   POST_LIST_STYLE: process.env.NEXT_PUBLIC_PPOST_LIST_STYLE || 'page', // ['page','scroll] 文章列表样式:页码分页、单页滚动加载
   POST_LIST_PREVIEW: process.env.NEXT_PUBLIC_POST_PREVIEW || 'false', //  是否在列表加载文章预览
-  POST_PREVIEW_LINES: 1, // 预览博客行数
-  POST_RECOMMEND_COUNT: 6, // 推荐文章数量
-  POSTS_PER_PAGE: 12, // post counts per page
+  POST_PREVIEW_LINES: 0, // 预览博客行数
+  POST_RECOMMEND_COUNT: 0, // 推荐文章数量
+  POSTS_PER_PAGE: 0, // post counts per page
   POSTS_SORT_BY: process.env.NEXT_PUBLIC_POST_SORT_BY || 'notion', // 排序方式 'date'按时间,'notion'由notion控制
 
-  PREVIEW_CATEGORY_COUNT: 16, // 首页最多展示的分类数量，0为不限制
-  PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
+  PREVIEW_CATEGORY_COUNT: 1, // 首页最多展示的分类数量，0为不限制
+  PREVIEW_TAG_COUNT: 1, // 首页最多展示的标签数量，0为不限制
 
   // 鼠标点击烟花特效
   FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || true, // 开关
